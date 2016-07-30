@@ -5,6 +5,10 @@ using namespace std;
 class BuckyClass
 {
 public:
+	BuckyClass(string z)
+	{
+		setName(z);
+	}
 	void setName(string x)
 	{
 		name = x;
@@ -20,9 +24,11 @@ private:
 
 int main(int argc, char* argv[])
 {
-	BuckyClass bo;
-	bo.setName("Jessica");
-	cout << bo.getName();
+	BuckyClass bo("Bucky Roberts");
+	cout << bo.getName() << endl;
+
+	BuckyClass bo2("Sally McSalad");
+	cout << bo2.getName() << endl;
 
 	return 0;
 }
