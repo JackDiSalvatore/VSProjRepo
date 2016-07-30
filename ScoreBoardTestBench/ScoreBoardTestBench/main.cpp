@@ -20,19 +20,28 @@ private:
 		{
 			if (inScore->score <= score)
 			{
-				if (nextScore->InsertScore(inScore) == true)		// correct location to insert the score
+				if (nextScore != NULL)			// Is there a next score in the list
 				{
-					inScore->nextScore = nextScore;					// score to be inserted points to nextScore
-					nextScore = inScore;							// put the new score in
-					return false;
+					if (nextScore->InsertScore(inScore) == true)		// correct location to insert the score
+					{
+						//inScore->nextScore = nextScore;					// score to be inserted points to nextScore
+						nextScore = inScore;							// put the new score in
+						return false;
+					}
+					else
+					{
+						return false;
+					}
 				}
 				else
 				{
+					nextScore = inScore;		// inScore is the last in the list
 					return false;
 				}
 			}
 			else
 			{
+				inScore->nextScore = this;		
 				return true;					// true means this is the right position in the list
 			}
 		}
@@ -48,8 +57,12 @@ private:
 		Score* nextScore;
 	};
 public:
-	ScoreBoard();
-	~ScoreBoard();
+	ScoreBoard()
+		:
+	firstScore(NULL)
+	{
+	}
+	~ScoreBoard() {}
 	void AddScore(int score, const char* time);
 	void Test()
 	{	// new puts objects on the heap
@@ -66,5 +79,6 @@ private:
 int main()
 {
 	ScoreBoard board;
+	board.Test();
 	
 }
