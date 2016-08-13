@@ -4,7 +4,9 @@
 
 using namespace std;
 
-Sally::Sally()
+Sally::Sally(int a, int b)
+	: regVar(a),
+	cnstVar(b)
 {
 	cout << "I am the constructor" << endl;
 
@@ -13,6 +15,14 @@ Sally::Sally()
 Sally::~Sally()
 {
 	cout << "I am the destructor" << endl;
+}
+
+void Sally::print()
+{
+	cout << "Regular variable is: " << regVar
+		<< " Consant variable is: " << cnstVar << endl;
+
+	return;
 }
 
 void Sally::printShiz()

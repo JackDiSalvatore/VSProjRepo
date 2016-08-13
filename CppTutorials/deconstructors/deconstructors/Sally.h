@@ -5,13 +5,15 @@
 class Sally
 {
 public:
-	Sally();
+	Sally(int a, int b);
 	~Sally();
 
+	void print();
 	void printShiz();
 	void printShiz2() const;
 private:
-
+	int regVar;
+	const int cnstVar;
 };
 
 
