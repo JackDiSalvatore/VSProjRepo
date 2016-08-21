@@ -48,8 +48,8 @@ int main(int argc, char* argv[])
 	enemy1->setAttackPower(29);
 	enemy2->setAttackPower(34);
 	
-	ninja1.attack();
-	monster1.attack();
-
-	return 0;
+	ninja1.attack();				// cant use enemy1 because its a type of Enemy
+	monster1.attack();				// Enemy class does not have attack func
+									// virtual members will make this easier!	
+	return 0;	
 }
