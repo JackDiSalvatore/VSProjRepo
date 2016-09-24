@@ -1,0 +1,4 @@
+﻿  Main.cpp
+c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\factorial_problem\factorial_problem\main.cpp(56): warning C4018: '<': signed/unsigned mismatch
+c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\factorial_problem\factorial_problem\main.cpp(18): warning C4715: 'old_factorial': not all control paths return a value
+  Factorial_Problem.vcxproj -> C:\Users\Jack\Documents\Visual Studio 2015\Projects\VSProjRepo\CppTutorials\Factorial_Problem\Debug\Factorial_Problem.exe
