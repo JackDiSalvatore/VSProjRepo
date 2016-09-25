@@ -14,5 +14,21 @@ int main()
 
 	buckyFile.close();
 
+
+	ofstream jeffFile("beef-jerky.txt");
+
+	if (!jeffFile.is_open())
+	{
+		cout << "File is not open man" << endl;
+	}
+	else
+	{
+		cout << "File is open" << endl;
+	}
+
+	jeffFile << "I love the beef\n";
+
+	jeffFile.close();
+
 	return 0;
 }
