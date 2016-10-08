@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\string_functions\string_functions\main.cpp(21): warning C4018: '<': signed/unsigned mismatch
+  string_functions.vcxproj -> C:\Users\Jack\Documents\Visual Studio 2015\Projects\VSProjRepo\CppTutorials\string_functions\Debug\string_functions.exe

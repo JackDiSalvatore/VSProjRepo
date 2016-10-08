@@ -1,0 +1,6 @@
+﻿  main.c
+c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\making_a_string_function\making_a_string_function\main.c(17): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\making_a_string_function\making_a_string_function\main.c(17): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\making_a_string_function\making_a_string_function\main.c(17): note: the missing variadic argument 2 is required by format string '%c'
+  c:\users\jack\documents\visual studio 2015\projects\vsprojrepo\cpptutorials\making_a_string_function\making_a_string_function\main.c(17): note: this argument is used as a buffer size
+  making_a_string_function.vcxproj -> C:\Users\Jack\Documents\Visual Studio 2015\Projects\VSProjRepo\CppTutorials\making_a_string_function\Debug\making_a_string_function.exe
